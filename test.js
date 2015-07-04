@@ -9,4 +9,11 @@ describe('str', function() {
   it('should stringify object', function() {
     expect(str({foo:'bar'})).to.eql('{"foo":"bar"}')
   })
+
+  it('should return empty string for falsy', function() {
+    expect(str(false)).to.eql('')
+    expect(str(undefined)).to.eql('')
+    expect(str(0)).to.eql('')
+  })
+
 })
