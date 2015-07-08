@@ -11,7 +11,7 @@ describe('str', function() {
   })
 
   it('should stringify function', function() {
-    expect(str(function(){ })).to.eql('function (){ }')
+    expect(str(function(){ }).replace(/ /g, '')).to.eql('function(){}')
   })
 
   it('should stringify object', function() {
