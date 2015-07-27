@@ -1,4 +1,4 @@
-var is = require('is') 
+var is = require('utilise.is') 
 
 module.exports = function str(d){
   return d === 0 ? '0'
